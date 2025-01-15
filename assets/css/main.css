@@ -837,8 +837,8 @@ section {
   margin-left: 0px;
   margin-bottom: 0px;
   height: 480px;
-  width: 50%;
   padding-left: 0px;
+  width: calc(50% - 16px);
 }
 
 .headline-item:nth-child(2),
@@ -2045,6 +2045,7 @@ footer p i {
     grid-column: span 2 / span 2;
     height: auto;
     width: 100%;
+    padding-left: 0.25rem;
   }
 
   .headline-item:nth-child(2), .headline-item:nth-child(4) {
@@ -2200,6 +2201,18 @@ footer p i {
 
   .bottom-article-header .meta-info {
     white-space: nowrap;
+  }
+
+  .news-list-1.grid-3 .news-item {
+    grid-column: span 3 / span 3;
+  }
+
+  .logo-group {
+    flex-wrap: wrap;
+  }
+
+  .logo-group a {
+    margin-bottom: 0.5rem;
   }
 }
 
