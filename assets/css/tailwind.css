@@ -649,6 +649,42 @@
         @apply hidden;
     }
 
+    .custom-banner-1{
+        @apply flex items-center justify-between px-16 relative
+        before:w-full before:h-[80%] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-z-10;
+    }
+    .custom-banner-1::before{
+        background: url(../images/bg-banner.jpg) no-repeat center;
+    }
+    .custom-banner-1 h3{
+        @apply text-white font-libre text-2xl mb-2;
+    }
+    .custom-banner-1 p{
+        @apply text-white font-lato text-sm mb-6;
+    }
+
+    .custom-banner-2{
+        @apply flex items-center justify-between px-12 relative w-full max-w-[1000px] mx-auto
+        before:w-full before:h-[80%] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-z-10;
+    }
+    .custom-banner-2::before{
+        background: url(../images/bg-banner.jpg) no-repeat center;
+    }
+    .custom-banner-2 p{
+        @apply text-white font-lato text-sm mb-6 text-center pl-12;
+    }
+
+    .custom-banner-3{
+        @apply flex items-center mb-8 justify-between px-12 relative w-full max-w-[1000px] mx-auto
+        before:w-full before:h-[60%] before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:-z-10;
+    }
+    .custom-banner-3::before{
+        background: url(../images/bg-banner.jpg) no-repeat center;
+    }
+    .custom-banner-3 p{
+        @apply text-white font-lato text-sm text-center;
+    }
+
     @media only screen and (max-width: 768px){
         .for-mobile{
             @apply block;
