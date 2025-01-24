@@ -29,6 +29,9 @@
     section{
         @apply mb-14;
     }
+    p{
+        @apply font-lato;
+    }
     .top-header{
         @apply bg-slate-900 py-3;
     }
@@ -685,6 +688,44 @@
         @apply text-white font-lato text-sm text-center;
     }
 
+    .offer{
+        @apply w-full max-w-[600px] mx-auto bg-slate-100 rounded-lg p-8;
+    }
+    .offer h4{
+        @apply text-lg font-bold font-libre text-center mb-3;
+    }
+    .offer ul{
+        @apply text-sm px-16 mb-6;
+    }
+    .offer ul li{
+        @apply mb-2 flex items-start;
+    }
+    .offer ul li i.fa{
+        @apply mr-2 pt-1 text-green-600;
+    }
+    .price-card{
+        @apply bg-white p-4 rounded-lg flex items-center justify-between relative;
+    }
+    .price-card h5{
+        @apply font-bold text-lg font-lato;
+    }
+    .price-card h5 span{
+        @apply text-xl text-orange-600;
+    }
+    .price-card p{
+        @apply font-lato text-xs text-slate-600;
+    }
+    .price-card p span{
+        @apply text-orange-600 font-bold;
+    }
+    .price-card.best-price{
+        @apply border border-orange-600;
+    }
+    .price-card.best-price::before{
+        content: "BEST PRICE";
+        @apply px-2 py-1 bg-orange-600 rounded-md absolute left-4 text-xs text-white -top-3;
+    }
+
     @media only screen and (max-width: 768px){
         .for-mobile{
             @apply block;
@@ -857,6 +898,48 @@
         }
         .logo-group a{
             @apply mb-2;
+        }
+        .offer{
+            @apply p-4;
+        }
+        .offer ul{
+            @apply px-0;
+        }
+        .custom-banner-1{
+            @apply px-4 flex-wrap py-8;
+        }
+        .custom-banner-1::before{
+            @apply h-full bg-cover;
+        }
+        .custom-banner-2{
+            @apply px-4 flex-wrap py-8;
+        }
+        .custom-banner-2::before{
+            @apply h-full bg-cover;
+        }
+        .custom-banner-2 img{
+            @apply mb-4;
+        }
+        .custom-banner-2 .text p{
+            @apply pl-0;
+        }
+        .custom-banner-2 .text div{
+            @apply pl-0;
+        }
+        .custom-banner-3{
+            @apply px-4 flex-wrap py-8 justify-center;
+        }
+        .custom-banner-3::before{
+            @apply h-full bg-cover;
+        }
+        .custom-banner-3{
+            @apply px-4 flex-wrap py-8;
+        }
+        .custom-banner-3 p{
+            @apply py-4;
+        }
+        .footer-logo{
+            @apply flex justify-center mb-8;
         }
     }
 
