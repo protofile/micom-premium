@@ -508,7 +508,7 @@
         @apply absolute top-0 left-0 w-full h-full opacity-0 z-10;
     }
     .tool-bt-group .bt{
-        @apply w-8 h-8 bg-slate-200 text-slate-900 rounded-full;
+        @apply w-8 h-8 bg-slate-200 text-slate-900 rounded-full hover:bg-miblue-600 hover:text-white transition-all;
     }
     .article-text{
         @apply w-full px-16 py-8 text-[16px] leading-7 relative
@@ -562,7 +562,7 @@
         @apply fixed top-0 left-1/2 z-50 -translate-x-1/2 w-full;
     }
     .master.detail-premium header .top-header{
-        @apply bg-[rgba(255,255,255,0)];
+        @apply bg-[rgba(255,255,255,0)] transition-all;
     }
     .master.detail-epaper header .left-group,
     .master.detail-epaper header .right-group{
@@ -724,6 +724,9 @@
     .price-card.best-price::before{
         content: "BEST PRICE";
         @apply px-2 py-1 bg-orange-600 rounded-md absolute left-4 text-xs text-white -top-3;
+    }
+    .master.detail-premium header .top-header.sticks{
+        @apply bg-slate-900;
     }
 
     @media only screen and (max-width: 768px){

@@ -433,5 +433,21 @@
         <script src="assets/js/jquery-1.11.0.min.js"></script>
         <script src="assets/js/main.js"></script>
         
+        <script>
+            $(document).ready(function(){
+                var yourNavigation = $(".top-header");
+                    stickyDiv = "sticks";
+                    yourHeader = 200;
+
+                $(window).scroll(function() {
+                if( $(this).scrollTop() > yourHeader ) {
+                    yourNavigation.addClass(stickyDiv);
+                } else {
+                    yourNavigation.removeClass(stickyDiv);
+                }
+                });
+            });
+        </script>
+
     </body>
 </html>

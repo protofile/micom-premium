@@ -1622,6 +1622,16 @@ footer p i {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity, 1));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.tool-bt-group .bt:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(66 159 211 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .article-text {
@@ -1753,6 +1763,9 @@ footer p i {
 
 .master.detail-premium header .top-header {
   background-color: rgba(255,255,255,0);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .master.detail-epaper header .left-group,
@@ -2148,6 +2161,11 @@ footer p i {
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.master.detail-premium header .top-header.sticks {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
 }
 
 @media only screen and (max-width: 768px){
