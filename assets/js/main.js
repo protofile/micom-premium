@@ -22,4 +22,26 @@ $(document).ready(function(){
       //do nothing
     }
   });
+  $(".payment-method-item").click(function(){
+    $(".payment-method-item").removeClass("checked");
+    $(this).addClass("checked");
+  });
+  $(".topik-item").click(function(){
+    $(this).toggleClass("active");
+  });
+
+  $(".mi-accordion .acc-item").click(function(){
+    $(this).toggleClass("active");
+    $($(this).children(".acc-body")).slideToggle();
+    $($(this).children(".acc-header").children(".fa")).toggleClass("fa-caret-down fa-caret-up");
+  });
+
+  $(".btn-pop-link").click(function(pl){
+    pl.preventDefault();
+    $($(this).attr("href")).addClass("show");
+  });
+  $(".cancel-bt").click(function(cb){
+    cb.preventDefault();
+    $(".overlay").removeClass("show");
+  });
 });

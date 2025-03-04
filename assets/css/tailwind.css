@@ -728,6 +728,171 @@
     .master.detail-premium header .top-header.sticks{
         @apply bg-slate-900;
     }
+    .offer-2{
+        @apply px-16 mb-4;
+    }
+    .price-card-2{
+        @apply w-full bg-[#429fd3] rounded-3xl overflow-hidden shadow-lg font-lato; 
+    }
+    .price-card-2 .price-card-title{
+        @apply text-center py-3 text-white text-lg;
+    }
+    .price-card-2 .price-card-ct{
+        @apply rounded-3xl p-8;
+        background: #fff url(../images/bg-price.png) no-repeat center top;
+    }
+    .package-ico{
+        @apply w-24 h-24 mx-auto mt-5 mb-16;
+    }
+    .package-ico img{
+        @apply w-full h-full object-contain;
+    }
+    .price-card-ct ul{
+        @apply mb-10;
+    }
+    .price-card-ct li{
+        @apply text-[16px] text-[#656565] leading-8;
+    }
+    .price-card-ct li i{
+        @apply text-[#4fbc74];
+    }
+    .price-card-ct .price{
+        @apply text-center text-[#429fd3] text-[26px] font-bold mb-4;
+    }
+    .price-card-ct .price span{
+        @apply text-[16px] font-normal;
+    }
+    .price-btn{
+        @apply w-full block text-center rounded-lg bg-[#429fd3] py-2 text-white;
+    }
+    .subs-cta{
+        @apply flex items-center justify-between bg-[#0079bc] rounded-3xl p-4;
+    }
+    .subs-cta .price-btn{
+        @apply max-w-[160px];
+    }
+    .subs-cta p{
+        @apply text-sm px-10 text-white;
+    }
+
+    .login-page{
+        @apply bg-slate-100 h-[100vh];
+    }
+    .login-header{
+        @apply bg-slate-900 flex justify-center py-2;
+    }
+    .login-header img{
+        @apply h-12;
+    }
+    .login-form-container{
+        @apply w-full max-w-96 mx-auto py-20;
+    }
+    .form-title{
+        @apply text-2xl font-bold mb-7;
+    }
+    .frm-group{
+        @apply w-full mb-4;
+    }
+    .frm-group label{
+        @apply text-xs text-slate-500 w-full block mb-1;
+    }
+    .frm-group input,
+    .forget-password input{
+        @apply w-full px-6 py-3 border text-sm border-slate-200 rounded-lg transition-all focus:border-blue-500 focus:shadow-lg focus:outline-none;
+    }
+    .btn.btn-white{
+        @apply bg-white text-miblue-700 border border-miblue-700 rounded-lg;
+    }
+    .btn.facebook{
+        @apply bg-miblue-700 rounded-lg text-white;
+    }
+    .frm-group p, .frm-group a{
+        @apply text-sm text-slate-700;
+    }
+    .frm-group a{
+        @apply text-miblue-700;
+    }
+    .payment-card{
+        @apply rounded-lg p-6 bg-white;
+    }
+    .payment-method-item{
+        @apply w-full relative border border-slate-300 rounded-lg h-10 block bg-white p-1 hover:cursor-pointer hover:border-miblue-700 transition-all;
+    }
+    .payment-method-item.checked{
+        @apply border-miblue-700;
+    }
+    .payment-method-item input{
+        @apply absolute w-full h-full z-10 top-0 left-0 opacity-0;
+    }
+    .payment-method-item img{
+        @apply w-full h-full object-contain;
+    }
+    .container{
+        @apply w-full max-w-[1200px] mx-auto px-4;
+    }
+    .form-subtitle{
+        @apply text-slate-500 font-normal font-lato; 
+    }
+    .topik-item{
+        @apply flex items-center gap-2 relative p-2 pr-4 border border-slate-300 rounded-full transition-all hover:shadow-lg;
+    }
+    .topik-item img{
+        @apply w-10 h-10 object-cover rounded-full;
+    }
+    .topik-item input{
+        @apply absolute w-full h-full z-10 opacity-0 hover:cursor-pointer;
+    }
+    .topik-item.active{
+        @apply bg-blue-200;
+    }
+    .wallet-logo-group{
+        @apply w-full;
+    }
+    .wallet-logo-group img{
+        @apply inline-block h-5 w-auto object-contain mb-4 mx-2;
+    }
+    .how-to-item img{
+        @apply mb-4 w-24 h-24 object-cover mx-auto;
+    } 
+
+    .mi-accordion{
+        @apply w-full;
+    }
+    .acc-item{
+        @apply w-full relative border border-slate-200 mb-2 rounded-md;
+    }
+    .acc-item.active{
+        @apply shadow-lg;
+    }
+    .acc-head{
+        @apply flex justify-between items-center px-6 py-4;
+    }
+    .acc-body{
+        @apply p-6 border-t border-t-slate-100 hidden;
+    }
+    .acc-item .acc-head i{
+        @apply transition-all;
+    }
+    .acc-item.active .acc-head i{
+        @apply rotate-180;
+    }
+    
+    .overlay{
+        @apply opacity-0 pointer-events-none transition-all w-full h-full p-4 fixed top-0 left-0 z-50 bg-[rgba(0,0,0,0.5)];
+    }
+    .overlay.show{
+        @apply opacity-100 pointer-events-auto;
+    }
+    .popup{
+        @apply absolute w-[96%] max-w-lg bg-white px-8 py-6 rounded-xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+    .forget-password input{
+        @apply !text-center mb-6;
+    }
+    .forget-password button{
+        @apply !rounded-lg;
+    }
+    
 
     @media only screen and (max-width: 768px){
         .for-mobile{
@@ -943,6 +1108,9 @@
         }
         .footer-logo{
             @apply flex justify-center mb-8;
+        }
+        .offer-2{
+            @apply px-2;
         }
     }
 
