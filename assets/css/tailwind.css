@@ -779,7 +779,7 @@
         @apply bg-slate-100 h-[100vh];
     }
     .login-header{
-        @apply bg-red-900 flex justify-center py-2;
+        @apply bg-slate-900 flex justify-center py-2;
     }
     .login-header img{
         @apply h-12;
