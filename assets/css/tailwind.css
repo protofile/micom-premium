@@ -1112,6 +1112,12 @@
         .offer-2{
             @apply px-2;
         }
+        .subs-cta{
+            @apply flex-wrap justify-center;
+        }
+        .subs-cta p{
+            @apply my-4 px-0;
+        }
     }
 
 
