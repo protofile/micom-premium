@@ -618,7 +618,7 @@
 
     .master.detail-premium .main-menu,
     .master.detail-epaper .main-menu{
-        @apply fixed w-48 h-full top-[80px] -left-full bg-white z-30 transition-all block py-4 shadow-lg;
+        @apply fixed w-48 top-[80px] -left-full bg-white z-30 transition-all block py-4 shadow-lg;
     }
     .master.detail-premium .main-menu.show,
     .master.detail-epaper .main-menu.show{
@@ -923,7 +923,7 @@
             @apply mr-0;
         }
         .main-menu{
-            @apply fixed w-3/4 h-full top-[50px] -left-full bg-white z-30 transition-all block py-4 shadow-lg;
+            @apply fixed w-3/4 top-[50px] -left-full bg-white z-30 transition-all block py-4 shadow-lg;
         }
         .main-menu li{
             @apply w-full;

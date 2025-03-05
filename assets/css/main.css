@@ -1887,7 +1887,6 @@ footer p i {
   left: -100%;
   z-index: 30;
   display: block;
-  height: 100%;
   width: 12rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
@@ -2684,7 +2683,6 @@ footer p i {
     left: -100%;
     z-index: 30;
     display: block;
-    height: 100%;
     width: 75%;
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
