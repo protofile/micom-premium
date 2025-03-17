@@ -2305,10 +2305,13 @@ footer p i {
 .login-form-container {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5rem;
   width: 100%;
-  max-width: 24rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  max-width: 400px;
+  border-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  padding: 1.5rem;
 }
 
 .form-title {

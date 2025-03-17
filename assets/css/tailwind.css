@@ -785,7 +785,7 @@
         @apply h-12;
     }
     .login-form-container{
-        @apply w-full max-w-96 mx-auto py-20;
+        @apply w-full max-w-[400px] mx-auto mt-20 p-6 bg-white rounded-xl;
     }
     .form-title{
         @apply text-2xl font-bold mb-7;
